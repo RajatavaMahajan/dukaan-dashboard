@@ -72,7 +72,7 @@ const Dashboard = () => {
                   </div>
                   <div className=" flex justify-between items-center">
                     <p className=" text-[32px] font-medium leading-[38px]">
-                      92312.20
+                    ₹2,312.23
                     </p>
                     <div className="text-white flex items-center">
                       <p className=" text-base leading-4 underline ">
@@ -98,7 +98,7 @@ const Dashboard = () => {
                 </div>
                 <div className=" flex justify-between items-center">
                   <p className=" text-[32px] font-medium leading-[38px]">
-                    92312.20
+                  ₹92,312.20
                   </p>
                   <div className="text-[#146EB4] flex items-center">
                     <p className=" text-base underline">13 orders</p>
@@ -113,7 +113,7 @@ const Dashboard = () => {
                 </div>
                 <div className=" flex justify-between items-center">
                   <p className=" text-[32px] font-medium leading-[38px]">
-                    92312.20
+                  ₹23,92,312.19
                   </p>
                 </div>
               </div>

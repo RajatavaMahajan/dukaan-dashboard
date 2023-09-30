@@ -14,6 +14,9 @@ import {
   Palette,
   Zap,
 } from "lucide-react";
+import Image from "next/image";
+import nisha from '@/public/nisha.png'
+
 
 const routes = [
   {
@@ -61,7 +64,9 @@ const Sidebar = () => {
   return (
     <div className=" text-white flex justify-center flex-col gap-6 w-full h-full">
       <div className=" w-[192px] h-auto flex gap-3">
-        <div className=" min-w-[39px] min-h-[39px] rounded bg-gray-300"></div>
+        <div className="w-[39px] h-[39px] rounded overflow-hidden">
+            <Image alt="logo" src = {nisha} className=" w-full h-full"/>
+        </div>
         <div className=" flex flex-col w-[108px]">
           <p className=" text-[15px] font-medium leading-[22px]">Nishyan</p>
           <p className=" opacity-80 text-[13px] font-normal leading-4 underline">

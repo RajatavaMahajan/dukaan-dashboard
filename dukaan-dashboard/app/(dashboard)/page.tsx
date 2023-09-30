@@ -1,3 +1,4 @@
+'use client'
 import Sidebar from "@/components/sidebar";
 import {
   HelpCircle,
@@ -19,10 +20,13 @@ import {
   TableRow,
 } from "@/components/ui/table"
 
+const isLargeScreen = window.innerWidth>768
+
 
 const Dashboard = () => {
   return (
-    <div className=" flex justify-center">
+    <div>
+      {!isLargeScreen?(<p>Only for large screen</p>):(<div className=" flex justify-center">
       <div className=" bg-[#1E2640] min-w-[204px] px-[10px] py-4 h-screen fixed top-0 left-0">
         <Sidebar />
       </div>
@@ -223,6 +227,7 @@ const Dashboard = () => {
           </div>
         </div>
       </div>
+    </div>)}
     </div>
   );
 };

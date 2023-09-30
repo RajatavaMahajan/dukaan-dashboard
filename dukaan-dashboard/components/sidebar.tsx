@@ -1,5 +1,6 @@
 "use client";
 
+import { cn } from "@/lib/utils";
 import {
   ChevronDown,
   Home,
@@ -73,17 +74,19 @@ const Sidebar = () => {
       </div>
       <div className=" flex flex-col gap-1 flex-1">
         {routes.map((route, index) => {
+            
           return (
             <div
-              className=" px-4 py-2 rounded flex gap-3 text-sm items-end justify-start"
+              className={cn(" px-4 py-2 rounded flex gap-3 text-sm items-end justify-start cursor-pointer hover:bg-[#343b53]  opacity-70",route.label==='Payouts' && ' opacity-100 bg-[#343b53]')}
               key={index}
             >
               <route.icon />
-              <p>{route.label}</p>
+              <p className="">{route.label}</p>
             </div>
           );
         })}
       </div>
+      
       <div className=" w-[192px] h-auto flex gap-3 bg-[#353C53] rounded py-[6px] px-3">
         <div className="p-[6px] flex items-center justify-center bg-white bg-opacity-10 rounded">
             <Wallet className=" w-6 h-6"/>

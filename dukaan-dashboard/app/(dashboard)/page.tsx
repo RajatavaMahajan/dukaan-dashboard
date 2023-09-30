@@ -158,7 +158,7 @@ const Dashboard = () => {
               <Table>
   <TableHeader className=" bg-[#F2F2F2] px-3 py-[10px] ">
     <TableRow className=" text-sm font-medium text-[#4D4D4D]">
-      <TableHead className="w-[100px]">Order ID</TableHead>
+      <TableHead>Order ID</TableHead>
       <TableHead>Status</TableHead>
       <TableHead>Transaction ID</TableHead>
       <TableHead>Refund Date</TableHead>
